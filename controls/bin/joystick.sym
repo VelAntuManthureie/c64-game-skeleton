@@ -1,0 +1,14 @@
+.namespace controls_joystick {
+  .label read__selected_port=$2000
+  .label read=$2004
+  .label read__dy=$2002
+  .label read__dx=$2001
+  .label set_fp=$202c
+  .label djr3=$201e
+  .label djrr=$2004
+  .label djr2=$201a
+  .label djr1=$2016
+  .label djr0=$2012
+  .label read__fire_pressed=$2003
+  .label djrrb=$200a
+}

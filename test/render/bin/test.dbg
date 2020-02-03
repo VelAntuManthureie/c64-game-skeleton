@@ -1,0 +1,138 @@
+<C64debugger version="1.0">
+   <Sources values="INDEX,FILE">
+      0,KickAss.jar:/include/autoinclude.asm
+      1,C:\Users\CRSNTN78E18D969X\Documents\VSCProjects\C64\game_skeleton\test\render\test.asm
+      2,C:\Users\CRSNTN78E18D969X\Documents\VSCProjects\C64\game_skeleton\test\render\map_data.asm
+   </Sources>
+
+   <Segment name="Default" dest="" values="START,END,FILE_IDX,LINE1,COL1,LINE2,COL2">
+      <Block name="Unnamed">
+         $1000,$100f,2,46,9,46,13
+         $1010,$101f,2,47,9,47,13
+      </Block>
+      <Block name="Unnamed">
+         $2000,$2003,2,53,9,53,13
+      </Block>
+      <Block name="Unnamed">
+         $3000,$300f,2,58,9,58,13
+         $3010,$301f,2,59,9,59,13
+         $3020,$302f,2,60,9,60,13
+         $3030,$303f,2,61,9,61,13
+      </Block>
+      <Block name="Unnamed">
+         $5000,$5003,2,66,9,66,13
+      </Block>
+      <Block name="Unnamed">
+         $c000,$c001,1,5,5,5,7
+         $c002,$c004,1,6,5,6,7
+         $c005,$c006,1,7,5,7,7
+         $c007,$c009,1,8,5,8,7
+         $c00a,$c00b,1,9,5,9,7
+         $c00c,$c00e,1,10,5,10,7
+         $c00f,$c010,1,11,5,11,7
+         $c011,$c013,1,12,5,12,7
+         $c014,$c016,1,13,5,13,7
+         $c017,$c019,1,14,5,14,7
+         $c01a,$c01c,1,16,9,16,11
+         $c01d,$c01d,1,17,5,17,7
+         $c01e,$c01e,1,29,9,29,13
+         $c01f,$c01f,1,31,9,31,13
+         $c020,$c020,1,33,9,33,13
+         $c021,$c021,1,35,9,35,13
+         $c022,$c022,1,37,9,37,13
+         $c023,$c024,1,41,13,41,15
+         $c025,$c026,1,42,13,42,15
+         $c027,$c028,1,43,13,43,15
+         $c029,$c02a,1,44,13,44,15
+         $c02b,$c02c,1,45,13,45,15
+         $c02d,$c02e,1,46,13,46,15
+         $c02f,$c030,1,47,13,47,15
+         $c031,$c032,1,48,13,48,15
+         $c033,$c035,1,49,13,49,15
+         $c036,$c036,1,51,17,51,19
+         $c037,$c037,1,53,13,53,15
+         $c038,$c03a,1,54,13,54,15
+         $c03b,$c03b,1,55,13,55,15
+         $c03c,$c03d,1,56,13,56,15
+         $c03e,$c03e,1,58,17,58,19
+         $c03f,$c03f,1,58,17,58,19
+         $c040,$c040,1,58,17,58,19
+         $c041,$c041,1,58,17,58,19
+         $c042,$c043,1,60,13,60,15
+         $c044,$c045,1,61,13,61,15
+         $c046,$c047,1,62,13,62,15
+         $c048,$c049,1,63,13,63,15
+         $c04a,$c04c,1,65,13,65,15
+         $c04d,$c04d,1,66,13,66,15
+         $c04e,$c04e,1,68,17,68,19
+         $c04f,$c04f,1,68,17,68,19
+         $c050,$c052,1,70,13,70,15
+         $c053,$c053,1,71,13,71,15
+         $c054,$c055,1,72,13,72,15
+         $c056,$c058,1,73,13,73,15
+         $c059,$c059,1,74,9,74,11
+      </Block>
+   </Segment>
+
+   <Labels values="SEGMENT,ADDRESS,NAME">
+      Default,$0001,TRUE
+      Default,$0000,FALSE
+      Default,$0000,COLRMETH_GLOBAL
+      Default,$0001,COLRMETH_PERTILE
+      Default,$0002,COLRMETH_PERCHAR
+      Default,$0000,COLOURING_METHOD
+      Default,$0001,CHAR_MULTICOLOUR_MODE
+      Default,$0009,COLR_SCREEN
+      Default,$0003,COLR_CHAR_DEF
+      Default,$0000,COLR_CHAR_MC1
+      Default,$0001,COLR_CHAR_MC2
+      Default,$0004,CHAR_COUNT
+      Default,$0004,TILE_COUNT
+      Default,$0004,TILE_WID
+      Default,$0004,TILE_HEI
+      Default,$0002,MAP_WID
+      Default,$0002,MAP_HEI
+      Default,$0008,MAP_WID_CHRS
+      Default,$0008,MAP_HEI_CHRS
+      Default,$0040,MAP_WID_PXLS
+      Default,$0040,MAP_HEI_PXLS
+      Default,$0020,SZ_CHARSET_DATA
+      Default,$0004,SZ_CHARSET_ATTRIB_DATA
+      Default,$0040,SZ_TILESET_DATA
+      Default,$0004,SZ_MAP_DATA
+      Default,$1000,ADDR_CHARSET_DATA
+      Default,$2000,ADDR_CHARSET_ATTRIB_DATA
+      Default,$3000,ADDR_TILESET_DATA
+      Default,$5000,ADDR_MAP_DATA
+      Default,$1000,charset_data
+      Default,$2000,charset_attrib_data
+      Default,$3000,tileset_data
+      Default,$5000,map_data
+      Default,$c000,main
+      Default,$c01a,stop
+      Default,$c01e,test_map
+      Default,$0001,MAP_L2
+      Default,$0004,TILE_L2
+      Default,$0002,CHAR_L2
+      Default,$00fb,ZP0
+      Default,$00fd,ZP1
+      Default,$00fb,MAP_POINTER
+      Default,$00fd,TILESET_POINTER
+      Default,$c01e,get_char__map_x
+      Default,$c01f,get_char__offset_x
+      Default,$c020,get_char__map_y
+      Default,$c021,get_char__offset_y
+      Default,$c022,get_char__char
+      Default,$c023,get_char
+      Default,$c023,get_tile_index
+      Default,$c04a,get_char_index
+   </Labels>
+
+   <Breakpoints values="SEGMENT,ADDRESS,ARGUMENT">
+      Default,$c023,
+   </Breakpoints>
+
+   <Watchpoints values="SEGMENT,ADDRESS1,ADDRESS2,ARGUMENT">
+   </Watchpoints>
+
+</C64debugger>

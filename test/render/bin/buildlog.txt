@@ -1,0 +1,16 @@
+parsing
+flex pass 1
+flex pass 2
+Output pass
+Writing prg file: test.prg
+
+Memory Map
+----------
+Default-segment:
+  $1000-$101f Unnamed
+  $2000-$2003 Unnamed
+  $3000-$303f Unnamed
+  $5000-$5003 Unnamed
+  $c000-$c059 Unnamed
+
+Writing Symbol file: test.sym

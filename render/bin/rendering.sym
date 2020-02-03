@@ -1,0 +1,174 @@
+.namespace memory {
+  .label ZP_3=$52
+  .label ZP_4=$fb
+  .label ZP_1=$3b
+  .label ZP_2=$3c
+  .label ZP_5=$fd
+  .label ZP_0=$2a
+}
+.namespace map_management {
+  .label TILE_HEIGTH_L2=$2
+  .label MAP_WIDTH_L2=$1
+  .label char_types=$50af {
+  }
+  .label TILE_WIDTH_L2=$2
+  .label MAP_POINTER=$fb
+  .label TILESET_POINTER=$fd
+  .label TILE_WIDTH=$4
+  .label TILE_HEIGTH=$4
+  .label position_to_map_info=$500c {
+    .label output=$5060 {
+      .label pointer=$5067
+      .label tile_index=$5064
+      .label map_x=$5060
+      .label tile_offset=$5065
+      .label map_y=$5062
+      .label offset_x=$5061
+      .label offset_y=$5063
+      .label char_offset=$5066
+    }
+    .label input=$505e {
+      .label x=$505e
+      .label y=$505f
+    }
+  }
+  .label get_char_index=$5069 {
+    .label output=$50a2 {
+      .label char_index=$50a2
+    }
+    .label input=$509e {
+      .label map_x=$509e
+      .label map_y=$50a0
+      .label offset_x=$509f
+      .label offset_y=$50a1
+    }
+    .label get_tile_index=$5069
+    .label get_char_index=$508e
+  }
+  .label get_char_type=$50a3 {
+    .label output=$50ae {
+      .label char_type=$50ae
+    }
+    .label input=$50ad {
+      .label char_index=$50ad
+    }
+  }
+  .label TILE_SIZE_L2=$2
+}
+.namespace map_data {
+  .label COLR_SCREEN=$9
+  .label MAP_HEI_PXLS=$40
+  .label map_data=$5000
+  .label ADDR_CHARSET_ATTRIB_DATA=$2000
+  .label SZ_CHARSET_ATTRIB_DATA=$4
+  .label TILE_WID_L2=$2
+  .label SZ_MAP_DATA=$4
+  .label MAP_WID=$2
+  .label CHAR_COUNT=$4
+  .label COLRMETH_PERCHAR=$2
+  .label TILE_WID=$4
+  .label COLR_CHAR_MC2=$1
+  .label MAP_HEI=$2
+  .label ADDR_TILESET_DATA=$3000
+  .label MAP_HEI_CHRS=$8
+  .label CHAR_MULTICOLOUR_MODE=$1
+  .label COLR_CHAR_DEF=$3
+  .label ADDR_CHARSET_DATA=$1000
+  .label MAP_WID_CHRS=$8
+  .label COLRMETH_PERTILE=$1
+  .label COLOURING_METHOD=$0
+  .label COLR_CHAR_MC1=$0
+  .label TRUE=$1
+  .label TILE_HEI=$4
+  .label MAP_WID_L2=$1
+  .label TILE_COUNT=$4
+  .label SZ_CHARSET_DATA=$20
+  .label charset_attrib_data=$2000
+  .label MAP_HEI_L2=$1
+  .label MAP_WID_PXLS=$40
+  .label SZ_TILESET_DATA=$40
+  .label COLRMETH_GLOBAL=$0
+  .label TILE_HEI_L2=$2
+  .label tileset_data=$3000
+  .label ADDR_MAP_DATA=$5000
+  .label FALSE=$0
+  .label charset_data=$1000
+}
+.namespace rendering {
+  .label render_viewport=$50af {
+    .label input=$50f7 {
+      .label center_y=$50f8
+      .label center_x=$50f7
+    }
+  }
+  .label TILE_HEIGTH_L2=$2
+  .label TILE_WIDTH_L2=$2
+  .label test=$5236 {
+    .label SCREEN_START=$400
+    .label VIDEO_PAGE=$400
+  }
+  .label TILE_BUFFER_POINTER=$fb
+  .label VIEWPORT_HEIGTH=$4
+  .label VIDEO_BUFFER_POINTER=$fd
+  .label VIEWPORT_H=$0
+  .label render_tiles=$50f9 {
+    .label inc_mi_current=$5168 {
+      .label v=$51bd {
+        .label adjust=$51d2
+      }
+      .label h=$5168 {
+        .label adjust_next_tile=$51a6
+        .label adjust=$517d
+      }
+    }
+    .label set_tile_for_render=$5118
+    .label current_col=$5216
+    .label input=$5224 {
+      .label mi_from=$5224 {
+        .label pointer=$522b
+        .label tile_index=$5228
+        .label map_x=$5224
+        .label tile_offset=$5229
+        .label map_y=$5226
+        .label offset_x=$5225
+        .label offset_y=$5227
+        .label char_offset=$522a
+      }
+      .label mi_to=$522d {
+        .label pointer=$5234
+        .label tile_index=$5231
+        .label map_x=$522d
+        .label tile_offset=$5232
+        .label map_y=$522f
+        .label offset_x=$522e
+        .label offset_y=$5230
+        .label char_offset=$5233
+      }
+    }
+    .label tiles_rendered=$5215
+    .label mi_current=$5219 {
+      .label pointer=$5220
+      .label x_steps=$5222
+      .label tile_index=$521d
+      .label map_x=$5219
+      .label y_steps=$5223
+      .label tile_offset=$521e
+      .label map_y=$521b
+      .label offset_x=$521a
+      .label offset_y=$521c
+      .label char_offset=$521f
+    }
+    .label set_tile_buffer_pointer=$5118
+    .label set_video_buffer_pointer=$5128
+    .label render_tile=$5139 {
+      .label traverse_row=$5149
+      .label do_render=$513f
+      .label traverse_column=$5143
+    }
+    .label current_row=$5217
+  }
+  .label VIEWPORT_WIDTH=$4
+  .label TILE_WIDTH=$4
+  .label TILE_HEIGTH=$4
+  .label VIEWPORT_V=$0
+}

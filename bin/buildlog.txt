@@ -1,0 +1,14 @@
+parsing
+flex pass 1
+    goofy_monster: {
+        ldx player.position_x
+        ldy player.position_y
+        jsr npc_actors.move_to(actor_index)
+                       ^
+
+Error: Unknown function : move_to
+at line 13, column 24 in behaviours.asm
+called at line 4, column 31 in actors.asm
+called at line 21, column 9 in C:\Users\CRSNTN78E18D969X\Documents\VSCProjects\C64\game_skeleton\main.asm
+
+
