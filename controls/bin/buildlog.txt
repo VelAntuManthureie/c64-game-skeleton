@@ -1,0 +1,12 @@
+parsing
+flex pass 1
+flex pass 2
+Output pass
+Writing prg file: joystick.prg
+
+Memory Map
+----------
+Default-segment:
+  $2000-$2030 Default
+
+Writing Symbol file: joystick.sym

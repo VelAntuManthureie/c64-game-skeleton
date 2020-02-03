@@ -1,0 +1,15 @@
+parsing
+Got 2 errors while executing:
+  (C:\Users\CRSNTN78E18D969X\Documents\VSCProjects\C64\game_skeleton\npc\behaviours.asm 10:13) Unknown symbol 'player'
+  (C:\Users\CRSNTN78E18D969X\Documents\VSCProjects\C64\game_skeleton\npc\behaviours.asm 11:13) Unknown symbol 'player'
+
+        .byte 0
+behaviours:
+    goofy_monster: {
+        ldx player.position_x
+            ^
+
+Error: Unknown symbol 'player'
+at line 10, column 13 in behaviours.asm
+
+

@@ -1,0 +1,16 @@
+parsing
+flex pass 1
+flex pass 2
+Output pass
+Writing prg file: rendering.prg
+
+Memory Map
+----------
+Default-segment:
+  $1000-$101f Unnamed
+  $2000-$2003 Unnamed
+  $3000-$3047 Unnamed
+  $5000-$5235 Unnamed
+  $c000-$c0a5 Unnamed
+
+Writing Symbol file: rendering.sym
